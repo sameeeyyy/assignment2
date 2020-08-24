@@ -1,6 +1,10 @@
 @charset "utf-8";
 /* CSS Document */
 
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+
 body {
 	margin: 0;
 	font-family: "cursive";
@@ -14,44 +18,68 @@ body {
 [tabindex="-1"]:focus:not(:focus-visible) {
 	outline: 0!important;
 }
-hr {
-	box-sizing: content-box;
-	height: 0;
-	overflow: visible;
-}
-h1, h2, h3, h4, h5, h6 {
+
+h1 {
 	margin-top: 0;
 	margin-bottom: .5rem;
 }
-p {
-	margin-top: 0;
-	margin-bottom: 1rem;
-}
-.container {
-	width: 100%;
-	padding-right: 15px;
-	padding-left: 15px;
-	margin-right: auto;
-	margin-left: auto;
-}
-.row {
-	display: -ms-flexbox;
-	display: flex;
-	-ms-flex-wrap: wrap;
-	flex-wrap: wrap;
-	margin-right: -15px;
-	margin-left: -15px;
-}
+
 .main-hd {
 	text-align: center;
 	margin: 50px;
 }
+
+.row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
 .col-lg-4 {
-	position: relative;
-	width: 100%;
-	padding-right: 15px;
-	padding-left: 15px;
-	-ms-flex: 0 0 33.333333%;
-	flex: 0 0 33.333333%;
-	max-width: 33.333333%;
+    -ms-flex: 0 0 33.333333%;
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+}
+
+.row .block {
+    margin: 0 20px 0 20px;
+    border: 3px solid;
+    padding: 0px 20px 20px 20px;
+	background: #999999;
+}
+
+.block > div {
+    width: 25%;
+    border: 3px solid #000;
+    padding: 5px 30px 5px 30px;
+    position: relative;
+    top: -2px;
+    right: -23px;
+    float: right;
+}
+
+.block > div {
+	text-align: center;
+	font-weight: 600;
+	font-size: 1.2rem;
+	margin: 0;
+}
+
+.block p {
+    margin-bottom: 1rem;
+    margin-top: 70px;
+}
+
+.block .chicken{
+	background: #D59898;
+}
+
+.block .beef{
+	background: #C14543;
+	color: #fff;
+}
+
+.block .sushi{
+	background: #E5D198;
 }
