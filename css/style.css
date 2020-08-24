@@ -13,7 +13,6 @@ body {
     line-height: 1.5;
     color: #212529;
     text-align: left;
-    background-color: #fff;
     background: linear-gradient(#ffff00 0%, #cc0000 100%) no-repeat;
     height: 95vh;
 }
