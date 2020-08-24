@@ -30,20 +30,18 @@ h1 {
 }
 
 .row {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
+	position: absolute;	
 }
 
 .col-lg-4 {
     -ms-flex: 0 0 33.333333%;
     flex: 0 0 33.333333%;
-    max-width: 33.333333%;
+    width: 33.333333%;
+	float: left;
 }
 
 .row .block {
-    margin: 0 20px 0 20px;
+    margin: 0 10px 0 10px;
     border: 3px solid;
     padding: 0px 20px 20px 20px;
 	background: #999999;
@@ -68,7 +66,7 @@ h1 {
 .block p {
     margin-bottom: 1rem;
     margin-top: 70px;
-    font-size: 12px;
+    font-size: 1rem;
 }
 
 .block .chicken{
@@ -82,4 +80,47 @@ h1 {
 
 .block .sushi{
 	background: #E5D198;
+}
+
+@media (max-width:991px) and (min-width: 768px) {
+	
+	.block p {
+		font-size: 12px;
+	}
+	
+	.row {
+		margin: 0 10px 0 10px;
+		position: absolute;
+	}
+	.row .block {
+		margin: 0 10px 0 10px;
+	}
+	.col-md-6 {
+		width: 50%;
+		float: left;
+	}
+	.col-md-12 {
+		width: 100%;
+		float: left;
+		margin-top: 20px;
+	}
+	
+}
+
+@media (max-width: 767px) {
+	.block p {
+		font-size: 12px;
+		margin-top: 50px;
+	}
+	.main-hd {
+		margin-bottom: 0;
+	}
+	.row {
+		position: absolute;
+	}
+	.col-sm-12 {
+		width: 100%;
+		float: left;
+		margin-top: 20px;
+	}
 }
