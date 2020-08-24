@@ -109,6 +109,9 @@ h1 {
 }
 
 @media (max-width: 767px) {
+	body {
+		height: 115vh;
+	}
 	.block p {
 		font-size: 12px;
 		margin-top: 50px;
